@@ -122,7 +122,7 @@ const newEvent = {
   name: form.name.value,
 //   dateTime: form.dateTime.value ? new Date(form.dateTime.value).toISOString() : "",
 //   date: dateTimeValue.toISOString(),
-  date: form.date.value,
+  date: form.date.value ? new Date(form.date.value).toISOString() : "",
   location: form.location.value,
   description: form.description.value,
 
